@@ -20,17 +20,14 @@ public class InputScheme : MonoBehaviour {
 		float ver = (Input.GetKey(KeyCode.S) ? -1.0f : 0.0f) + (Input.GetKey(KeyCode.W) ? 1.0f : 0);
 
 		Vector3 move = hor * Camerizer.Instance.Right + ver * Camerizer.Instance.Depth;
-		move.Normalize();
-		move = move * self.speed;
-
-		if(controller.isGrounded && Input.GetKeyDown(KeyCode.Space))
+		
+		if(Input.GetKeyDown(KeyCode.Space))
 		{
-			move.y += 10f;
-			animator.SetTrigger("jump");
+			self.Jump = true;
 		}
 
 		self.Move = move;
 
-		if(controller.isGrounded && Input.GetKeyDown(KeyCode.F)) animator.SetTrigger("attack");
+		if(Input.GetKeyDown(KeyCode.F)) self.Attack();
 	}
 }
