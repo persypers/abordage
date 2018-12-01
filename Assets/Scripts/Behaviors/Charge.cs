@@ -17,12 +17,13 @@ public class Charge : Action {
 
 	public override TaskStatus OnUpdate()
 	{
-		float curDistance = (target.Value.transform.position - transform.position).magnitude;
-		if(curDistance <= distance)
+		Vector3 dir = target.Value.transform.position - transform.position;
+		dir = new Vector3(dir.x, 0f, dir.z);
+		if(dir.magnitude <= distance)
 		{
 			return TaskStatus.Success;
 		}
-		self.Move = target.Value.transform.position - transform.position;
+		self.Move = dir;
 		return TaskStatus.Running;
 	}
 

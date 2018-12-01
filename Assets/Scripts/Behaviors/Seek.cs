@@ -42,7 +42,7 @@ public class Seek : Action {
 			agent.destination = target.Value.transform.position;
 			t = 0;
 		}
-		self.Move = agent.desiredVelocity;
+		self.Move = new Vector3(agent.desiredVelocity.x, 0f, agent.desiredVelocity.z);
 		agent.velocity = self.controller.velocity;
 
 		return TaskStatus.Running;

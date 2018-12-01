@@ -30,6 +30,7 @@ public class Creature : MonoBehaviour {
 	public CharacterController controller;
 	Animator animator;
 	Vector3 prevMove;
+	bool wasGrounded;
 	public float moveControl = 1f;
 	public Vector3 Move;
 	public bool Jump;
@@ -78,6 +79,11 @@ public class Creature : MonoBehaviour {
 		}
 		Jump = false;
 
+		if(!controller.isGrounded && wasGrounded)
+		{
+			animator.SetTrigger("jump");
+		}
+
 		prevMove = move;
 		controller.Move(move * Time.deltaTime);
 /* 		if(navMeshAgent && navMeshAgent.enabled)
@@ -87,6 +93,7 @@ public class Creature : MonoBehaviour {
 		} else {
 			controller.Move(move * Time.deltaTime);
 		} */
+		wasGrounded = controller.isGrounded;
 	}
 
 	public void Attack()
