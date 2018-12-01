@@ -15,6 +15,12 @@ MonoBehaviour:
     floatVariables: []
     intVariables:
     - useVariable: 1
+      name: CurrentLevel
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: CurrentSL
       tooltip: 
       showInInspector: 0
@@ -44,19 +50,19 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: HasLiver
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: HasLungs
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     stringVariables: []
     vector2Variables: []
     vector3Variables: []
@@ -71,5 +77,5 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
   events: []
