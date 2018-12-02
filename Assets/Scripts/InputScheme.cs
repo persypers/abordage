@@ -17,6 +17,10 @@ public class InputScheme : MonoBehaviour {
 
 	private void Update()
 	{
+		float rotation = (Input.GetKey(KeyCode.Q) ? -1.0f : 0.0f) + (Input.GetKey(KeyCode.E) ? 1.0f : 0);
+		Vector3 eul = transform.rotation.eulerAngles;
+		transform.rotation = Quaternion.Euler(eul.x, eul.y + rotation * 2f, eul.z);
+		
 		float hor = (Input.GetKey(KeyCode.A) ? -1.0f : 0.0f) + (Input.GetKey(KeyCode.D) ? 1.0f : 0);
 		float ver = (Input.GetKey(KeyCode.S) ? -1.0f : 0.0f) + (Input.GetKey(KeyCode.W) ? 1.0f : 0);
 
@@ -29,6 +33,7 @@ public class InputScheme : MonoBehaviour {
 
 		self.Move = move;
 
-		if(Input.GetKeyDown(KeyCode.F)) self.Attack();
+		if(Input.GetKeyDown(KeyCode.J)) self.Attack();
+		if(Input.GetKeyDown(KeyCode.K)) self.Attack("dash");
 	}
 }

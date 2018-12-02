@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour {
 		HP hit = other.GetComponent<HP>();
 		if(!hit || hits.Contains(hit)) return;
 		hits.Add(hit);
-		hit.Damage(damage);
+		hit.Damage(damage, this);
 	}
 
 	private void OnDisable()

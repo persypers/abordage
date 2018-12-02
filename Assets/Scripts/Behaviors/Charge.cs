@@ -23,7 +23,7 @@ public class Charge : Action {
 		{
 			return TaskStatus.Success;
 		}
-		self.Move = dir;
+		if(self.state.canMove) self.Move = dir;
 		return TaskStatus.Running;
 	}
 
