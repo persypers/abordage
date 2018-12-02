@@ -38,7 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4389937846802106}
   - component: {fileID: 135762317078649962}
-  - component: {fileID: 114858823931307722}
+  - component: {fileID: 114727874849849570}
   m_Layer: 9
   m_Name: attack
   m_TagString: Untagged
@@ -226,12 +226,14 @@ MonoBehaviour:
     hitRecovery: 1
     canAttack: 1
     canJump: 1
+    ignoresGravity: 0
     moveControl: 1
   speed: 6
   jumpSpeed: 8
   controller: {fileID: 0}
   Move: {x: 0, y: 0, z: 0}
   prevMove: {x: 0, y: 0, z: 0}
+  Push: {x: 0, y: 0, z: 0}
   Jump: 0
   hitRecoveries: 1
   deaths: 1
@@ -272,7 +274,7 @@ MonoBehaviour:
   right: {fileID: 0}
   depth: {fileID: 0}
   up: {fileID: 0}
---- !u!114 &114858823931307722
+--- !u!114 &114727874849849570
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

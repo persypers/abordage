@@ -12,14 +12,18 @@ public class Creature : MonoBehaviour {
 		public bool canAttack;
 		public bool canJump;
 		public bool ignoresGravity;
+		public bool ignoresPushes;
 		public float moveControl;
-		public State (bool canMove = true, bool hitRecovery = true, bool canAttack = true, bool canJump = true, bool ignoresGravity = false, float moveControl = 1f)
+		public State (bool canMove = true, bool hitRecovery = true, bool canAttack = true, 
+			bool canJump = true, bool ignoresGravity = false, bool ignoresPushes = false, 
+			float moveControl = 1f)
 		{
 			this.canMove = canMove;
 			this.hitRecovery = hitRecovery;
 			this.canAttack = canAttack;
 			this.canJump = canJump;
 			this.ignoresGravity = ignoresGravity;
+			this.ignoresPushes = ignoresPushes;
 			this.moveControl = moveControl;
 		}
 	}
@@ -27,12 +31,13 @@ public class Creature : MonoBehaviour {
 	public static float gravity = 20f;
 	public float speed = 1.0f;
 	public float jumpSpeed;
-	float horDir = 1.0f;
+	public float horDir = 1.0f;
 	new Rigidbody rigidbody;
 	public CharacterController controller;
-	Animator animator;
+	public Animator animator;
 	public Vector3 Move;
 	public Vector3 prevMove;
+	public Vector3 Push;
 	public bool Jump;
 	HP hp;
 	public int hitRecoveries = 1;
@@ -43,10 +48,15 @@ public class Creature : MonoBehaviour {
 		animator = GetComponent<Animator>();
 		if(!controller) controller = GetComponent<CharacterController>();
 		hp = GetComponent<HP>();
-		hp.OnDamage.AddListener((damage) => {
-			if(state.hitRecovery) animator.SetTrigger("hitRecovery" + Random.Range(0, hitRecoveries));
+		hp.OnDamage.AddListener((damage, attack) => {
+			if(state.hitRecovery) 
+			{
+				
+				animator.SetTrigger("hitRecovery" + Random.Range(0, hitRecoveries));
+				Face(attack.transform.position - transform.position);
+			}
 		});
-		hp.OnDeath.AddListener((damage) => {
+		hp.OnDeath.AddListener((damage, attack) => {
 			state.hitRecovery = false;
 			animator.SetTrigger("death" + Random.Range(0, deaths));
 			controller.enabled = false;
@@ -55,44 +65,57 @@ public class Creature : MonoBehaviour {
 	}
 	private void Update()
 	{
-		float rotation = (Input.GetKey(KeyCode.Q) ? -1.0f : 0.0f) + (Input.GetKey(KeyCode.E) ? 1.0f : 0);
-		Vector3 eul = transform.rotation.eulerAngles;
-		transform.rotation = Quaternion.Euler(eul.x, eul.y + rotation * 2f, eul.z);
-
 		animator.SetBool("isGrounded", controller.isGrounded);
+		//Vector3 move = controller.isGrounded ? Vector3.zero : prevMove;
 		Vector3 move = controller.isGrounded ? Vector3.zero : prevMove;
+
 		if(state.canMove)
 		{
 			move += Move.normalized * speed * state.moveControl;
 			//Vector3 vertSpeed = new Vector3(0f, move.y, 0f);
 			move = move.normalized * speed;
-			float dir = Vector3.Dot(move, Camerizer.Instance.Right);
-			if(dir != 0f && Mathf.Sign(dir) != horDir) Flip();
-			animator.SetFloat("speed", move.sqrMagnitude);
+
+			Face(move);
 		}
-		
+		animator.SetFloat("speed", move.sqrMagnitude);
+
 		if(!state.ignoresGravity) move.y -= gravity * Time.deltaTime;
 
 		if(Jump && state.canJump)
 		{
 			move.y = jumpSpeed;
 			animator.SetTrigger("jump");
-			animator.SetFloat("speed", 0);
 		}
 		Jump = false;
 
+		if(Push != Vector3.zero && !state.ignoresPushes)
+		{
+			state.canMove = false;
+			state.canAttack = false;
+			state.canJump = false;
+			state.ignoresGravity = false;
+			move = Push;
+			Push = Vector3.zero;
+			//Face(-move);
+		}
+		Move = Vector3.zero;
 		prevMove = move;
 		controller.Move(move * Time.deltaTime);
 	}
 
-	public void Attack()
+	public void Attack(string attack = "attack")
 	{
 		if(state.canAttack)
 		{
-			animator.SetTrigger("attack");
+			animator.SetTrigger(attack);
 		}
 	}
 
+	private void Face(Vector3 dir)
+	{
+		float dot = Vector3.Dot(dir, Camerizer.Instance.Right);
+		if(dot != 0f && Mathf.Sign(dot) != horDir) Flip();
+	}
 	private void Flip()
 	{
 		horDir *= -1;

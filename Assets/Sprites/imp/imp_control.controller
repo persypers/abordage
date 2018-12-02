@@ -74,6 +74,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: dash
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -104,6 +110,7 @@ MonoBehaviour:
     canAttack: 1
     canJump: 1
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 1
 --- !u!114 &114101286388329260
 MonoBehaviour:
@@ -122,6 +129,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114323610118195506
 MonoBehaviour:
@@ -140,6 +148,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114364334267220062
 MonoBehaviour:
@@ -158,6 +167,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114521714743757608
 MonoBehaviour:
@@ -176,6 +186,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114534250295293320
 MonoBehaviour:
@@ -194,6 +205,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114608881546718332
 MonoBehaviour:
@@ -212,6 +224,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114658086824799302
 MonoBehaviour:
@@ -230,6 +243,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114704863579437430
 MonoBehaviour:
@@ -248,6 +262,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114792266178316018
 MonoBehaviour:
@@ -266,6 +281,7 @@ MonoBehaviour:
     canAttack: 1
     canJump: 1
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 1
 --- !u!114 &114901880736200130
 MonoBehaviour:
@@ -284,6 +300,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!114 &114929398864376764
 MonoBehaviour:
@@ -302,6 +319,7 @@ MonoBehaviour:
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 0
 --- !u!1101 &1101063881244163128
 AnimatorStateTransition:

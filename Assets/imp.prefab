@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 143752558311454954}
   - component: {fileID: 195995132801418102}
   - component: {fileID: 114505050942471840}
+  - component: {fileID: 114005222152699356}
   m_Layer: 10
   m_Name: imp
   m_TagString: Untagged
@@ -124,6 +125,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114005222152699356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300130539811784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7a94e36f29a3045b3b4f07cf9f921c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114370467899885186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +238,7 @@ MonoBehaviour:
   controller: {fileID: 0}
   Move: {x: 0, y: 0, z: 0}
   prevMove: {x: 0, y: 0, z: 0}
+  Push: {x: 0, y: 0, z: 0}
   Jump: 0
   hitRecoveries: 2
   deaths: 5
