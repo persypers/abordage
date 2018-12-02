@@ -8,11 +8,12 @@ using UnityEngine.AI;
 public class Charge : Action {
 	public SharedGameObject target;
 	public float distance;
+	public float speedBoost = 1f;
 	Creature self;
 	public override void OnStart()
 	{
 		self = GetComponent<Creature>();
-		self.speed *= 1.5f;
+		self.speed *= speedBoost;
 	}
 
 	public override TaskStatus OnUpdate()
