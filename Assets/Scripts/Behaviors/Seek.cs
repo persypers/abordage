@@ -20,17 +20,29 @@ public class Seek : Action {
 		agent = GetComponent<NavMeshAgent>();
 		agent.updatePosition = false;
 		agent.updateRotation = false;
-		agent.enabled = true;
-		agent.nextPosition = transform.position;
-		agent.destination = target.Value.transform.position;
-		t = 0;
+		//agent.enabled = true;
+		//agent.nextPosition = transform.position;
+		//agent.destination = target.Value.transform.position;
+		t = interval;
 	}
 
 	public override TaskStatus OnUpdate()
 	{
 		float curDistance = (target.Value.transform.position - transform.position).magnitude;
 		t += Time.deltaTime;
-		remainingDistance = agent.remainingDistance;
+		if(self.state.canMove)
+		{
+			if(!agent.enabled)
+			{
+				agent.enabled = true;
+				agent.nextPosition = transform.position;
+				agent.destination = target.Value.transform.position;
+				t = 0;
+			}
+		} else 
+		{
+			agent.enabled = false;
+		}
 		if(agent.pathPending) {
 			return TaskStatus.Running;
 		}
