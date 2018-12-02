@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Creature : MonoBehaviour {
 	[System.Serializable]
@@ -124,6 +125,15 @@ public class Creature : MonoBehaviour {
 
 	public void Despawn()
 	{
+		if(GetComponent<InputScheme>())
+		{
+			animator.SetTrigger("death0");
+		} else 
 		GameObject.Destroy(gameObject);
+	}
+
+	public void RestartGame()
+	{
+		SceneManager.LoadScene("robs-sandbox");
 	}
 }
