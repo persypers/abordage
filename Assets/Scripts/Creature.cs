@@ -29,21 +29,17 @@ public class Creature : MonoBehaviour {
 	new Rigidbody rigidbody;
 	public CharacterController controller;
 	Animator animator;
-	Vector3 prevMove;
-	bool wasGrounded;
-	public float moveControl = 1f;
 	public Vector3 Move;
+	public Vector3 prevMove;
 	public bool Jump;
 	HP hp;
 	public int hitRecoveries = 1;
 	public int deaths = 1;
-	NavMeshAgent navMeshAgent;
 	private void Awake()
 	{
 		rigidbody = GetComponent<Rigidbody>();
 		animator = GetComponent<Animator>();
 		if(!controller) controller = GetComponent<CharacterController>();
-		navMeshAgent = GetComponent<NavMeshAgent>();
 		hp = GetComponent<HP>();
 		hp.OnDamage.AddListener((damage) => {
 			if(state.hitRecovery) animator.SetTrigger("hitRecovery" + Random.Range(0, hitRecoveries));
@@ -65,7 +61,9 @@ public class Creature : MonoBehaviour {
 		Vector3 move = controller.isGrounded ? Vector3.zero : prevMove;
 		if(state.canMove)
 		{
-			move += Move.normalized * speed * moveControl;
+			move += Move.normalized * speed * state.moveControl;
+			//Vector3 vertSpeed = new Vector3(0f, move.y, 0f);
+			move = move.normalized * speed;
 			float dir = Vector3.Dot(move, Camerizer.Instance.Right);
 			if(dir != 0f && Mathf.Sign(dir) != horDir) Flip();
 			animator.SetFloat("speed", move.sqrMagnitude);
@@ -76,24 +74,12 @@ public class Creature : MonoBehaviour {
 		{
 			move.y = jumpSpeed;
 			animator.SetTrigger("jump");
+			animator.SetFloat("speed", 0);
 		}
 		Jump = false;
 
-		if(!controller.isGrounded && wasGrounded)
-		{
-			animator.SetTrigger("jump");
-		}
-
 		prevMove = move;
 		controller.Move(move * Time.deltaTime);
-/* 		if(navMeshAgent && navMeshAgent.enabled)
-		{
-			controller.Move(navMeshAgent.desiredVelocity.normalized * speed * Time.deltaTime);
-			navMeshAgent.velocity = controller.velocity;
-		} else {
-			controller.Move(move * Time.deltaTime);
-		} */
-		wasGrounded = controller.isGrounded;
 	}
 
 	public void Attack()
