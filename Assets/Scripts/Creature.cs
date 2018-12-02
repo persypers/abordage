@@ -11,13 +11,15 @@ public class Creature : MonoBehaviour {
 		public bool hitRecovery;
 		public bool canAttack;
 		public bool canJump;
+		public bool ignoresGravity;
 		public float moveControl;
-		public State (bool canMove = true, bool hitRecovery = true, bool canAttack = true, bool canJump = true, float moveControl = 1f)
+		public State (bool canMove = true, bool hitRecovery = true, bool canAttack = true, bool canJump = true, bool ignoresGravity = false, float moveControl = 1f)
 		{
 			this.canMove = canMove;
 			this.hitRecovery = hitRecovery;
 			this.canAttack = canAttack;
 			this.canJump = canJump;
+			this.ignoresGravity = ignoresGravity;
 			this.moveControl = moveControl;
 		}
 	}
@@ -68,7 +70,8 @@ public class Creature : MonoBehaviour {
 			if(dir != 0f && Mathf.Sign(dir) != horDir) Flip();
 			animator.SetFloat("speed", move.sqrMagnitude);
 		}
-		move.y -= gravity * Time.deltaTime;
+		
+		if(!state.ignoresGravity) move.y -= gravity * Time.deltaTime;
 
 		if(Jump && state.canJump)
 		{

@@ -230,11 +230,11 @@ MonoBehaviour:
   speed: 6
   jumpSpeed: 8
   controller: {fileID: 0}
-  moveControl: 1
   Move: {x: 0, y: 0, z: 0}
+  prevMove: {x: 0, y: 0, z: 0}
   Jump: 0
-  hitRecoveries: 2
-  deaths: 2
+  hitRecoveries: 1
+  deaths: 1
 --- !u!114 &114401895097309960
 MonoBehaviour:
   m_ObjectHideFlags: 1
