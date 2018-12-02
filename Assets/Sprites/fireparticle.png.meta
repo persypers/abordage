@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: eed5118b965411741969f9b8b3bd196a
+guid: 7f22e3a18d849fa48b72d16039c2cdc9
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: fireparticle_0
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -38,17 +39,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 473, y: 210, z: 462, w: 180}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -80,11 +81,41 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: fireparticle_0
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 227
+        width: 295
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefa013e57dba5045a41012f5cbd3f9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -39, y: 153}
+      - {x: -115, y: 118}
+      - {x: -137, y: 52}
+      - {x: -137, y: -78}
+      - {x: -89, y: -110}
+      - {x: 44, y: -110}
+      - {x: 147, y: -67}
+      - {x: 149, y: -61}
+      - {x: 149, y: 43}
+      - {x: 73, y: 153}
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 01873520f1e08c340adb77b3f8241f60
     vertices: []
     indices: 
     edges: []
