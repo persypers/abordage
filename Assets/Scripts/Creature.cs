@@ -121,4 +121,9 @@ public class Creature : MonoBehaviour {
 		horDir *= -1;
 		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.y);
 	}
+
+	public void Despawn()
+	{
+		GameObject.Destroy(gameObject);
+	}
 }

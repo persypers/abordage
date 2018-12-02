@@ -116,7 +116,7 @@ Animator:
   m_GameObject: {fileID: 1300130539811784}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9fccc1d2e79b2054cabd6e6e9e63802c, type: 2}
+  m_Controller: {fileID: 9100000, guid: ad4c2fc8750b9884cb561228b4e16f12, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -232,10 +232,13 @@ MonoBehaviour:
     canAttack: 1
     canJump: 1
     ignoresGravity: 0
+    ignoresPushes: 0
     moveControl: 1
   speed: 6
   jumpSpeed: 0
+  horDir: 1
   controller: {fileID: 0}
+  animator: {fileID: 0}
   Move: {x: 0, y: 0, z: 0}
   prevMove: {x: 0, y: 0, z: 0}
   Push: {x: 0, y: 0, z: 0}
