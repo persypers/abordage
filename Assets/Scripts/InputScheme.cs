@@ -12,6 +12,7 @@ public class InputScheme : MonoBehaviour {
 		self = GetComponent<Creature>();
 		animator = GetComponent<Animator>();
 		controller = GetComponent<CharacterController>();
+		BehaviorDesigner.Runtime.GlobalVariables.Instance.SetVariableValue("Player", self.gameObject);
 	}
 
 	private void Update()
