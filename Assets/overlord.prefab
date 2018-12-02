@@ -304,7 +304,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HP+OnDamageEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  maxValue: 20
+  maxValue: 300
   isInvincible: 0
 --- !u!135 &135033314517461606
 SphereCollider:

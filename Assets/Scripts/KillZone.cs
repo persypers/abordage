@@ -6,6 +6,6 @@ public class KillZone : MonoBehaviour {
 	public void OnTriggerEnter(Collider other)
 	{
 		Creature hit = other.GetComponent<Creature>();
-		if(hit) GameObject.Destroy(hit.gameObject);
+		if(hit) hit.Despawn();
 	}
 }
