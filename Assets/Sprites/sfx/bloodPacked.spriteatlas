@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: bloodPacked
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 847eaed50a782ce4bb1ff5ca380af3d1, type: 3}
+    - {fileID: 102900000, guid: df643e2528ad68540a540e6820c9912a, type: 3}
+    - {fileID: 102900000, guid: dc5ad30cd8f81d8479da349714dd0686, type: 3}
+    - {fileID: 102900000, guid: d8823216f07ba9c4f9482214fd5419b8, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 36ba9f624e975f94c8bf2e86d39511a5, type: 3}
+  - {fileID: 21300000, guid: ce0ee6a2603770046b8cf4f3c71e734e, type: 3}
+  - {fileID: 21300000, guid: 467e80d26560df743ba5768dc7e9e9ca, type: 3}
+  - {fileID: 21300000, guid: b032a573a85fa4043bee4164d3242fd9, type: 3}
+  - {fileID: 21300000, guid: b456ca7398fb41749bec6a3fbb793724, type: 3}
+  - {fileID: 21300000, guid: ad855083fa145624088490bf30aeec66, type: 3}
+  - {fileID: 21300000, guid: bb5637440f72eef46b7a2d69a1e5f9b4, type: 3}
+  - {fileID: 21300000, guid: 0deee4f4d31298d49a020002fe4912de, type: 3}
+  - {fileID: 21300000, guid: 33efea256fd828b4fb4e7ed96e82b321, type: 3}
+  - {fileID: 21300000, guid: fa6540756dc95bc4c90867f3f4bc3799, type: 3}
+  - {fileID: 21300000, guid: f40d236731a80cf4983c6e9a12d2ecb9, type: 3}
+  - {fileID: 21300000, guid: 34946f976e47a0b44a222a30fdb009e4, type: 3}
+  - {fileID: 21300000, guid: 55d9eb18797654e449803f0551b48307, type: 3}
+  - {fileID: 21300000, guid: 01eb7239883dd1f4c9ab2342a73f264f, type: 3}
+  - {fileID: 21300000, guid: d7d4439a0a29a7548995291d1bbea16d, type: 3}
+  - {fileID: 21300000, guid: 67ad1fcae6e7e5947bdf4cf68eb3210c, type: 3}
+  - {fileID: 21300000, guid: f8d5ad3ba7ca1de4aa96c48c15bc8276, type: 3}
+  - {fileID: 21300000, guid: d36a6b5bdf770914a82a5cc90e3b0dbf, type: 3}
+  - {fileID: 21300000, guid: a442e31c9ae2f7944b3310932fbd58e5, type: 3}
+  - {fileID: 21300000, guid: 5383974c9a2f399408958e325de06117, type: 3}
+  - {fileID: 21300000, guid: 1b5cbe1d83cf5ab42ae85c37158fc785, type: 3}
+  - {fileID: 21300000, guid: 6ca9f9fd6bb5d8b4b87dcb1151bf6255, type: 3}
+  - {fileID: 21300000, guid: 5a8d1c3e27edebc4494285405c897ce3, type: 3}
+  - {fileID: 21300000, guid: 8401958e2f966b844bc779bf590c70a8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bloodSplash2_1_0006
+  - bloodSplash4_1_0001
+  - bloodSplash1_1_0002
+  - bloodSplash1_1_0001
+  - bloodSplash1_1_0005
+  - bloodSplash2_1_0003
+  - bloodSplash2_1_0001
+  - bloodSplash2_1_0002
+  - bloodSplash3_1_0003
+  - bloodSplash4_1_0003
+  - bloodSplash1_1_0004
+  - bloodSplash3_1_0005
+  - bloodSplash2_1_0004
+  - bloodSplash2_1_0005
+  - bloodSplash4_1_0006
+  - bloodSplash4_1_0002
+  - bloodSplash3_1_0001
+  - bloodSplash1_1_0006
+  - bloodSplash3_1_0006
+  - bloodSplash4_1_0004
+  - bloodSplash3_1_0004
+  - bloodSplash1_1_0003
+  - bloodSplash4_1_0005
+  - bloodSplash3_1_0002
+  m_Tag: bloodPacked
+  m_IsVariant: 0

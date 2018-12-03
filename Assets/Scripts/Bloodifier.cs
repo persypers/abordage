@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack : MonoBehaviour {
-	public float damage;
-	HashSet<HP> hits = new HashSet<HP>();	
+public class Bloodifier : MonoBehaviour {
 	public BloodSplash[] splashes;
 
 	public Queue<BloodSplash> splashQueue = new Queue<BloodSplash>();
@@ -19,28 +17,14 @@ public class Attack : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision)
 	{
-	}
-
-	private void OnTriggerEnter(Collider other)
-	{
-		HP hit = other.GetComponent<HP>();
-		if(!hit || hits.Contains(hit)) return;
-		hits.Add(hit);
-		hit.Damage(damage, this);
 		BloodSplash splash = splashQueue.Dequeue();
 		if(splash)
 		{
-			Vector3 pos = Vector3.Lerp(transform.position, other.transform.position, 0.5f);
+			Vector3 pos = collision.contacts[0].point;
 			splash.transform.position = pos;
 			splash.gameObject.SetActive(true);
-			splash.host = this;
+			//splash.host = this;
 			splash.transform.parent = null;
 		}
-
-	}
-
-	private void OnDisable()
-	{
-		hits.Clear();
 	}
 }
