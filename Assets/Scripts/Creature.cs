@@ -68,6 +68,7 @@ public class Creature : MonoBehaviour {
             var beh = GetComponent<BehaviorDesigner.Runtime.Behavior>();
             if (beh) beh.enabled = false;
 		});
+		EnemyCounter.RegisterNahui(this);
 	}
 	private void Update()
 	{
@@ -140,7 +141,10 @@ public class Creature : MonoBehaviour {
 		{
 			animator.SetTrigger("death0");
 		} else 
-		GameObject.Destroy(gameObject);
+		{
+			if(EnemyCounter.Instance) EnemyCounter.Instance.OnCreatureDied(this);
+			GameObject.Destroy(gameObject);
+		}
 	}
 
 	public void RestartGame()
