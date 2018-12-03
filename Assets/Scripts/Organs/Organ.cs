@@ -31,7 +31,6 @@ public class Organ : MonoBehaviour {
 
     protected virtual void Awake()
     {
-        Debug.Log(name + " : awake");
         var p = GetComponentInParent<Player>();
         player = p.GetComponent<Creature>();
     }
@@ -39,7 +38,6 @@ public class Organ : MonoBehaviour {
     protected void OnEnable()
     {
         IsActive = PlayMakerGlobals.Instance.Variables.FindFsmBool(varName).Value;
-        Debug.Log(name + " : onEnable  : " + IsActive + " : " + icon);
         if (icon) icon.SetActive(IsActive);
         if (absentEffect) absentEffect.SetActive(!IsActive);
         OnUpdate();

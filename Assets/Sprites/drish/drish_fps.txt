@@ -1,0 +1,10 @@
+DRISH
+
+idle - 8
+walk - 12
+start run - 12
+run - 25
+run end - 25
+gethurt - 12
+death - 25
+spawn - 12
