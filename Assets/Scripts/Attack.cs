@@ -27,7 +27,7 @@ public class Attack : MonoBehaviour {
 		if(!hit || hits.Contains(hit)) return;
 		hits.Add(hit);
 		hit.Damage(damage, this);
-		if(splashQueue.Peek())
+		if(splashQueue.Count > 0)
 		{
 			BloodSplash splash = splashQueue.Dequeue();
 			Vector3 pos = Vector3.Lerp(transform.position, other.transform.position, 0.5f);

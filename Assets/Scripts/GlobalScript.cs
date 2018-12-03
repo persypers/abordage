@@ -15,4 +15,12 @@ public class GlobalScript : MonoBehaviour {
         GameObject.DontDestroyOnLoad(gameObject);
         Instance = this;
     }
+
+    public static void PlaySound(string name)
+    {
+        if(!Instance) return;
+        var go = Instance.transform.Find(name);
+        if(!go) return;
+        go.GetComponent<AudioSource>().Play();
+    }
 }
