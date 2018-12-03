@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
     public float cameraRotationSpeed = 120f;
+	public HP hp;
+	public SpriteRenderer hpBar;
     Creature self;
 	Animator animator;
 	CharacterController controller;
@@ -13,6 +15,7 @@ public class Player : MonoBehaviour {
 		self = GetComponent<Creature>();
 		animator = GetComponent<Animator>();
 		controller = GetComponent<CharacterController>();
+		hp = GetComponent<HP>();
 		BehaviorDesigner.Runtime.GlobalVariables.Instance.SetVariableValue("Player", self.gameObject);
 	}
 
@@ -43,5 +46,7 @@ public class Player : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.J)) self.Attack();
 		if(Input.GetKeyDown(KeyCode.K)) self.Attack("dash");
+
+		hpBar.size = new Vector2(Mathf.Clamp01(hp.value / hp.maxValue) * hpBar.sprite.rect.width, hpBar.sprite.rect.height) / hpBar.sprite.pixelsPerUnit;
 	}
 }

@@ -28,7 +28,7 @@ public class Camerizer : MonoBehaviour {
         var ors = GameObject.FindObjectsOfType<Oriented>();
         foreach(var s in ors)
         {
-            sprites.Add(s);
+            if(s.enabled) sprites.Add(s);
         }
     }
 

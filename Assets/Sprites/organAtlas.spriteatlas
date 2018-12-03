@@ -83,6 +83,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c643b167629f03749805f89248d139c4, type: 3}
   - {fileID: 21300000, guid: f02bbdc74aa446a49bf513b4b52942d1, type: 3}
   - {fileID: 21300000, guid: a5352bd7268bce344aef23d7d689800f, type: 3}
+  - {fileID: 21300000, guid: 3a06ce28593dee14ea7da86f71680db2, type: 3}
   - {fileID: 21300000, guid: 58ea317894571e849be5c68a35ab25bd, type: 3}
   - {fileID: 21300000, guid: 25d7b6985cec3664c93625e110fa09e6, type: 3}
   - {fileID: 21300000, guid: 5f7920b80527d6a4bb2cd153adb43ba1, type: 3}
@@ -98,6 +99,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: aa2a251a5581b1241b1b3366bab5b11f, type: 3}
   - {fileID: 21300000, guid: c50e571a557fa6e4faf6eaa17f91167c, type: 3}
   - {fileID: 21300000, guid: 5f6b7c3a490e09e40b63a274e4b8a895, type: 3}
+  - {fileID: 21300000, guid: 661d4f3a75b6c6842a7143736cadb45f, type: 3}
   - {fileID: 21300000, guid: bc81345a647c2db4ea1b26e72583f0bb, type: 3}
   - {fileID: 21300000, guid: b773d28a553593d4698bf831e650ab7a, type: 3}
   - {fileID: 21300000, guid: 352898aad31c4804082fb92b5e167363, type: 3}
@@ -182,6 +184,7 @@ SpriteAtlas:
   - vaz_fires1_0001
   - vaz_lungs2_0006
   - vaz_bloodSplash1_0004
+  - healthbar_ramka
   - vaz_heart_beats1_0012
   - vaz_fires1_0002
   - vaz_heart_falls1_0005
@@ -197,6 +200,7 @@ SpriteAtlas:
   - vaz_brain1_0004
   - vaz_liver10007
   - vaz_bloodSplash1_0007
+  - healthbar_vnutr
   - vaz_lungs2_0002
   - vaz_firestart1_0005
   - vaz_heart_beats1_0004
