@@ -39881,7 +39881,7 @@ Transform:
   - {fileID: 1683070978}
   - {fileID: 1655035752}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1421255771
 MeshCollider:
@@ -53382,7 +53382,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020579804
 GameObject:
@@ -59349,14 +59349,6 @@ Prefab:
     - target: {fileID: 4920528226695478, guid: 564d1854ad29a66439f652f7c4928703, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920528226695478, guid: 564d1854ad29a66439f652f7c4928703, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920528226695478, guid: 564d1854ad29a66439f652f7c4928703, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 564d1854ad29a66439f652f7c4928703, type: 2}
