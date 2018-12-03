@@ -35,6 +35,7 @@ public class Creature : MonoBehaviour {
 	public float horDir = 1.0f;
 	new Rigidbody rigidbody;
 	public CharacterController controller;
+	public GameObject ui;
 	public Animator animator;
 	public Vector3 Move;
 	public Vector3 prevMove;
@@ -129,7 +130,8 @@ public class Creature : MonoBehaviour {
 	private void Flip()
 	{
 		horDir *= -1;
-		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.y);
+		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+		if(ui) ui.transform.localScale = new Vector3(-ui.transform.localScale.x, ui.transform.localScale.y, ui.transform.localScale.z);
 	}
 
 	public void Despawn()
