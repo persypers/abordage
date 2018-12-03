@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -15,5 +15,5 @@ MonoBehaviour:
   playmakerVersion: 
   showWelcomeScreen: 1
   showUpgradeGuide: 0
-  lastAutoUpdateSignature: '2018.1.5f1__C:/Users/robert.korolevskiy/Desktop/Razdolzhnitel/abordage/Assets__ '
+  lastAutoUpdateSignature: '2018.2.5f1__D:/abordage/abordage/Assets__ '
   useLegacyNetworking: 0

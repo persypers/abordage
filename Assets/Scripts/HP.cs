@@ -10,7 +10,7 @@ public class HP : MonoBehaviour
 	public OnDamageEvent OnDamage = new OnDamageEvent(); 
 	public OnDamageEvent OnDeath = new OnDamageEvent(); 
 	public float maxValue;
-	public float value {get; private set;}
+    public float value;
 	public bool isInvincible;
 	
 	private void Start()

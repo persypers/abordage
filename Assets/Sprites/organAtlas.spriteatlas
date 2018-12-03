@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: organAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 0c82b79a0582b674ea32edd6f974ee5d, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a13da6106474da94ca121e0637341126, type: 3}
+  - {fileID: 21300000, guid: d8c6a5504084d9e4d9c677625d60c207, type: 3}
+  - {fileID: 21300000, guid: 03476170468a6d040a91cb0aaa187f44, type: 3}
+  - {fileID: 21300000, guid: 10d2c770c57547d488b46c439098d7a6, type: 3}
+  - {fileID: 21300000, guid: 81fd20d039aa08f45b4596b5d62c3294, type: 3}
+  - {fileID: 21300000, guid: 459214d030e8e284ab2959b8ef0a7f83, type: 3}
+  - {fileID: 21300000, guid: f020f511d1977e24fa6055a03f0dbff5, type: 3}
+  - {fileID: 21300000, guid: 863ddf218068f7d46a917c6f48f910f2, type: 3}
+  - {fileID: 21300000, guid: 8aa4b231293c7d846a30f5f6d9fc3337, type: 3}
+  - {fileID: 21300000, guid: 8b1794410a767fc43a977654f50a1c95, type: 3}
+  - {fileID: 21300000, guid: f132d65122e4a8d42af39438e6e9fd20, type: 3}
+  - {fileID: 21300000, guid: e1777381e18d4de42aadb663c3fec654, type: 3}
+  - {fileID: 21300000, guid: d0415c81a73077444ba148a9b73bf05c, type: 3}
+  - {fileID: 21300000, guid: 3b395b12e88870b458989413b5f251b0, type: 3}
+  - {fileID: 21300000, guid: 2aff7662a8b0359408a8aee48399e5b3, type: 3}
+  - {fileID: 21300000, guid: dca05b6271a3fac4bac3ee6370fddadf, type: 3}
+  - {fileID: 21300000, guid: 9967f972315cfe2499ee32cd06ea9ba5, type: 3}
+  - {fileID: 21300000, guid: ae6c469243c389b4ba8145f6a79659fb, type: 3}
+  - {fileID: 21300000, guid: 4968c5f2bd74c7546ab3b7ae0cdf70d5, type: 3}
+  - {fileID: 21300000, guid: 1d65ac3321675f840987f6c965b143d1, type: 3}
+  - {fileID: 21300000, guid: 1708ab43b92233647b68b301da785959, type: 3}
+  - {fileID: 21300000, guid: 132c2a6385f5e084699ab0c88d4bfde0, type: 3}
+  - {fileID: 21300000, guid: 540370043e020ac45a9adbe5c60be1e7, type: 3}
+  - {fileID: 21300000, guid: fbc33c44389818849990a10c0bcfe4c7, type: 3}
+  - {fileID: 21300000, guid: f0cea094f913a8047a0fc4c6c00cf3c7, type: 3}
+  - {fileID: 21300000, guid: 9b84919402115274394238e60828f844, type: 3}
+  - {fileID: 21300000, guid: 49974db4d539ef24ebcfeca6b821a1a2, type: 3}
+  - {fileID: 21300000, guid: ccb85495dbee0644fb4e931cf44725b1, type: 3}
+  - {fileID: 21300000, guid: 6ae67495cc5ee27448e69587c2611e3d, type: 3}
+  - {fileID: 21300000, guid: 7789c495b56b521418ccfe39c100a03e, type: 3}
+  - {fileID: 21300000, guid: 0c4ed1d535ce740458c9be3cfc4880bb, type: 3}
+  - {fileID: 21300000, guid: 574183e50c38cb74e80aa4c40f158cd7, type: 3}
+  - {fileID: 21300000, guid: 0e510ae50cea2b848aeebd41768a7bf7, type: 3}
+  - {fileID: 21300000, guid: 50e1ac465eeeee145b054e47361c9ee7, type: 3}
+  - {fileID: 21300000, guid: 6bca0956eb1264749b399aa1b9dfd565, type: 3}
+  - {fileID: 21300000, guid: ce2b6186afb1d7b419b88431467cb1bf, type: 3}
+  - {fileID: 21300000, guid: d2910686e84c4cf4ab389aa781426996, type: 3}
+  - {fileID: 21300000, guid: 16db8196d944e00449b994f1dc0356a9, type: 3}
+  - {fileID: 21300000, guid: 459f14c69ccca0d448ada12069b9fb78, type: 3}
+  - {fileID: 21300000, guid: 432749d6b776d0d4fa5a8d18d4451f3b, type: 3}
+  - {fileID: 21300000, guid: c6008fd696ca7be49b4126537fa53cb3, type: 3}
+  - {fileID: 21300000, guid: e344afd6b429b764c8f24aa009dd6826, type: 3}
+  - {fileID: 21300000, guid: e42c5607ea7d5604fa919314a7a747e8, type: 3}
+  - {fileID: 21300000, guid: 33f05b07369197641bd33d3f2b0e28c8, type: 3}
+  - {fileID: 21300000, guid: 8f202f07d9f09734f96cc52610eb9f2c, type: 3}
+  - {fileID: 21300000, guid: 7a0306278d845e54a87109e8cb9ab773, type: 3}
+  - {fileID: 21300000, guid: 66382547c9a3d394a865072693e6e638, type: 3}
+  - {fileID: 21300000, guid: c643b167629f03749805f89248d139c4, type: 3}
+  - {fileID: 21300000, guid: f02bbdc74aa446a49bf513b4b52942d1, type: 3}
+  - {fileID: 21300000, guid: a5352bd7268bce344aef23d7d689800f, type: 3}
+  - {fileID: 21300000, guid: 58ea317894571e849be5c68a35ab25bd, type: 3}
+  - {fileID: 21300000, guid: 25d7b6985cec3664c93625e110fa09e6, type: 3}
+  - {fileID: 21300000, guid: 5f7920b80527d6a4bb2cd153adb43ba1, type: 3}
+  - {fileID: 21300000, guid: 99e6e8b8dd3d56d4fbfc71e9b8dbdfc0, type: 3}
+  - {fileID: 21300000, guid: 1af93ac8430dca84183b762ab67bbc69, type: 3}
+  - {fileID: 21300000, guid: bc30f7f89bc13c94d9f206d682bb9f04, type: 3}
+  - {fileID: 21300000, guid: 9946c349539695e4a88d597b4741087b, type: 3}
+  - {fileID: 21300000, guid: 6add2449fd57f1b43bd9032f4062f99b, type: 3}
+  - {fileID: 21300000, guid: 8a5aaf99dd240974dbc32b274fbd144a, type: 3}
+  - {fileID: 21300000, guid: 798626b92d6f90d40ae3161a52672e68, type: 3}
+  - {fileID: 21300000, guid: 18007be9a180dc2498df96e1e78e58b6, type: 3}
+  - {fileID: 21300000, guid: cc85adf97739b1b4881ea23dcd8ece5e, type: 3}
+  - {fileID: 21300000, guid: aa2a251a5581b1241b1b3366bab5b11f, type: 3}
+  - {fileID: 21300000, guid: c50e571a557fa6e4faf6eaa17f91167c, type: 3}
+  - {fileID: 21300000, guid: 5f6b7c3a490e09e40b63a274e4b8a895, type: 3}
+  - {fileID: 21300000, guid: bc81345a647c2db4ea1b26e72583f0bb, type: 3}
+  - {fileID: 21300000, guid: b773d28a553593d4698bf831e650ab7a, type: 3}
+  - {fileID: 21300000, guid: 352898aad31c4804082fb92b5e167363, type: 3}
+  - {fileID: 21300000, guid: 027b25ba52dbdc04599174ba6d6908f2, type: 3}
+  - {fileID: 21300000, guid: 8e91e8ba4448ea343ad7af30cee05335, type: 3}
+  - {fileID: 21300000, guid: 74e0a3da8fa5f3044b4269f659a737dc, type: 3}
+  - {fileID: 21300000, guid: df18fa1b41fcb09448902f271e9948fe, type: 3}
+  - {fileID: 21300000, guid: 8732e44b98e8a9a41a4b8f15276d115a, type: 3}
+  - {fileID: 21300000, guid: 30a5598bb0d16d64c87e257e0499aec7, type: 3}
+  - {fileID: 21300000, guid: 7a3bb2dbb36bb5d409fefe2746803867, type: 3}
+  - {fileID: 21300000, guid: e7dc0bfbf2841ec4281460ebcdef528a, type: 3}
+  - {fileID: 21300000, guid: 77ed540c3470f3b48a7f55688df476c8, type: 3}
+  - {fileID: 21300000, guid: 796d648c7d814fd4da763d7d02689ffc, type: 3}
+  - {fileID: 21300000, guid: c6bf7e7da484c7d41865d9fa9292d4fa, type: 3}
+  - {fileID: 21300000, guid: 0f54be9d81ba0db4e8bff7016fe9d200, type: 3}
+  - {fileID: 21300000, guid: 7937e4cd332354840beab12b3d0217d3, type: 3}
+  - {fileID: 21300000, guid: f7ba4bddda294a94b9e9e723581284f5, type: 3}
+  - {fileID: 21300000, guid: 6615a6fd5f4afb94fba757127aacdc1b, type: 3}
+  - {fileID: 21300000, guid: dd32472ec1c40444bab1ebc4ae3f9d69, type: 3}
+  - {fileID: 21300000, guid: 643bda2e626a15342a04d3398021ed7d, type: 3}
+  - {fileID: 21300000, guid: 9d0d416e62459844d85d64a896eecf98, type: 3}
+  - {fileID: 21300000, guid: 22b0d68e494603040866cbca531df422, type: 3}
+  - {fileID: 21300000, guid: 4219a6eef93852f4baf4fc24eaa48f91, type: 3}
+  - {fileID: 21300000, guid: 3ebddb2f861aba74f81b674979537adc, type: 3}
+  - {fileID: 21300000, guid: b19ed73fb169d044292667690c11ffb8, type: 3}
+  - {fileID: 21300000, guid: dc650c4f23754f6438df49c1d88c1564, type: 3}
+  - {fileID: 21300000, guid: d263055f517eb3d47ad2702a53eb64e5, type: 3}
+  - {fileID: 21300000, guid: 6f55d56fa69ce304dab3594b86ae0919, type: 3}
+  - {fileID: 21300000, guid: 939d286f59b506a4fae62ffe387a232e, type: 3}
+  - {fileID: 21300000, guid: 2785407f2e9392647bb4171652da8aa7, type: 3}
+  - {fileID: 21300000, guid: 69d5abcf7a7faac4da806a2714ea4b03, type: 3}
+  - {fileID: 21300000, guid: 4e059cdf3060556489d472bfaaff9c30, type: 3}
+  - {fileID: 21300000, guid: d7bd94ff010b0664283d290620bb4c97, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - vaz_liver10004
+  - vaz_fires1_0006
+  - vaz_eyes1_0008
+  - vaz_bloodSplash1_0006
+  - vaz_fires1_0004
+  - vaz_bloodSplash1_0009
+  - vaz_heart_falls1_0007
+  - vaz_heart_falls1_0003
+  - vaz_heart_falls1_0010
+  - vaz_lungs2_0005
+  - vaz_heart_falls1_0002
+  - vaz_heart_beats1_0003
+  - vaz_heart_beats1_0011
+  - vaz_bloodSplash1_0001
+  - vaz_eyes1_0007
+  - vaz_heart_falls1_0009
+  - vaz_fires1_0009
+  - vaz_eyes1_0014
+  - vaz_eyes1_0003
+  - vaz_bloodSplash1_0002
+  - vaz_firestart1_0002
+  - vaz_eyes1_0015
+  - vaz_firestart1_0003
+  - vaz_brain1_0006
+  - vaz_lungs2_0011
+  - vaz_firestart1_0006
+  - vaz_fires1_0005
+  - vaz_lungs2_0009
+  - vaz_lungs2_0008
+  - vaz_eyes1_0013
+  - vaz_liver10003
+  - vaz_heart_beats1_0001
+  - vaz_liver10002
+  - vaz_bloodSplash1_0005
+  - vaz_liver10008
+  - vaz_eyes1_0006
+  - vaz_heart_beats1_0005
+  - vaz_heart_falls1_0001
+  - vaz_heart_falls1_0012
+  - vaz_brain1_0002
+  - vaz_fires1_0008
+  - vaz_heart_falls1_0013
+  - vaz_fires1_0007
+  - vaz_heart_beats1_0013
+  - vaz_eyes1_0012
+  - vaz_brain1_0005
+  - vaz_eyes1_0016
+  - vaz_fires1_0001
+  - vaz_lungs2_0006
+  - vaz_bloodSplash1_0004
+  - vaz_heart_beats1_0012
+  - vaz_fires1_0002
+  - vaz_heart_falls1_0005
+  - vaz_liver10005
+  - vaz_eyes1_0005
+  - vaz_brain1_0007
+  - vaz_brain1_0003
+  - vaz_front
+  - vaz_heart_beats1_0007
+  - vaz_lungs2_0001
+  - vaz_heart_falls1_0004
+  - vaz_fires1_0003
+  - vaz_brain1_0004
+  - vaz_liver10007
+  - vaz_bloodSplash1_0007
+  - vaz_lungs2_0002
+  - vaz_firestart1_0005
+  - vaz_heart_beats1_0004
+  - vaz_heart_beats1_0006
+  - vaz_eyes1_0001
+  - vaz_heart_beats1_0010
+  - vaz_brain1_0001
+  - vaz_firestart1_0004
+  - vaz_lungs2_0010
+  - vaz_eyes1_0009
+  - vaz_lungs2_0007
+  - vaz_fires1_0010
+  - vaz_lungs2_0004
+  - vaz_blood
+  - vaz_eyes1_0004
+  - vaz_eyes1_0011
+  - vaz_lungs2_0003
+  - vaz_back
+  - vaz_bloodSplash1_0008
+  - vaz_bloodSplash1_0003
+  - vaz_brain1_0009
+  - vaz_eyes1_0002
+  - vaz_heart_beats1_0002
+  - vaz_heart_falls1_0006
+  - vaz_eyes1_0010
+  - vaz_brain1_0008
+  - vaz_heart_beats1_0008
+  - vaz_heart_falls1_0011
+  - vaz_liver10006
+  - vaz_liver10001
+  - vaz_firestart1_0001
+  - vaz_heart_beats1_0009
+  - vaz_heart_falls1_0008
+  m_Tag: organAtlas
+  m_IsVariant: 0

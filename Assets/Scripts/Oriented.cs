@@ -5,11 +5,11 @@ using UnityEngine;
 public class Oriented : MonoBehaviour {
 	public void OnEnable()
 	{
-		Camerizer.Instance.sprites.Add(this);
+        if (Camerizer.Instance) Camerizer.Instance.sprites.Add(this);
 	}
 
 	public void OnDisable()
 	{
-		Camerizer.Instance.sprites.Remove(this);
+        if (Camerizer.Instance) Camerizer.Instance.sprites.Remove(this);
 	}
 }

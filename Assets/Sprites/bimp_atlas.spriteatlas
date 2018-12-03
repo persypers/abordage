@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: bimp_atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 7cecab46119094d4c8de02a4297265f4, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 105455e0ddf3a9d41b44825b5de81158, type: 3}
+  - {fileID: 21300000, guid: 98ab8651151051345868e04e72c9942b, type: 3}
+  - {fileID: 21300000, guid: bac19d71ce912014eb68d451d3c48e1b, type: 3}
+  - {fileID: 21300000, guid: 42a109e1b69dcb4429905d14ea9f7d49, type: 3}
+  - {fileID: 21300000, guid: 68ba3242f1511b84e9af0c6401fabec7, type: 3}
+  - {fileID: 21300000, guid: 878323a24c9067541b898047e080ee3c, type: 3}
+  - {fileID: 21300000, guid: ef41ddc26e8e2604888272d972a7d6c7, type: 3}
+  - {fileID: 21300000, guid: 724fc5f2123f8fa4aa1ecdca1990c726, type: 3}
+  - {fileID: 21300000, guid: 5ace5375395e5ce4d8abe0e732db5902, type: 3}
+  - {fileID: 21300000, guid: 34f61a758a1575b41badf8d5d85a8c6e, type: 3}
+  - {fileID: 21300000, guid: 682add950efdc5b44bb85f8dfd564e3f, type: 3}
+  - {fileID: 21300000, guid: ea8713762f3973a4283a82395c8972e8, type: 3}
+  - {fileID: 21300000, guid: 6d66f29633c17d0439c2debaa55c7674, type: 3}
+  - {fileID: 21300000, guid: 517a53281c946da46ad04a78afbbf8ba, type: 3}
+  - {fileID: 21300000, guid: 8107d1f8db18a0744a990ecb71be9e33, type: 3}
+  - {fileID: 21300000, guid: db73d6199b403f9438f679e541e52a8b, type: 3}
+  - {fileID: 21300000, guid: f2168239bcdaf6d468e0302e9c539af2, type: 3}
+  - {fileID: 21300000, guid: abd82179e16b3dd4d8dcab7e0b63fd04, type: 3}
+  - {fileID: 21300000, guid: 4186cf995a651ef47a7051af58914447, type: 3}
+  - {fileID: 21300000, guid: 894ee8e97c8c38349b5f3466e75f6f11, type: 3}
+  - {fileID: 21300000, guid: 6556a3f9001bb344d961b365f5cbf380, type: 3}
+  - {fileID: 21300000, guid: 6fbea03ae8bfcd34aae9c3f8fc06d997, type: 3}
+  - {fileID: 21300000, guid: c30db2facb37bd642add251c7ee6d2f9, type: 3}
+  - {fileID: 21300000, guid: 80a37bfae32b65d4086db46719500b18, type: 3}
+  - {fileID: 21300000, guid: 08bfc93b54a091b4c9e7db92e2c0e00c, type: 3}
+  - {fileID: 21300000, guid: 253fce4b70b2eb740a7a20a5a3081d63, type: 3}
+  - {fileID: 21300000, guid: 72cf7e7c05f0e31469a70ce6747c9077, type: 3}
+  - {fileID: 21300000, guid: 8f2409bcdb3990b4e8019a7c4d92ba52, type: 3}
+  - {fileID: 21300000, guid: c2c30dec2787fc544a831665f4849c06, type: 3}
+  - {fileID: 21300000, guid: 281a657d4311f514b9c5d621798964e8, type: 3}
+  - {fileID: 21300000, guid: 46e9208d751d3034fa8d121cbf9e7f27, type: 3}
+  - {fileID: 21300000, guid: 32e36f8d0ce68d74387b6991bb97ecf5, type: 3}
+  - {fileID: 21300000, guid: 66dd37dd1f8a06743bcb4a38ce4865ea, type: 3}
+  - {fileID: 21300000, guid: ecf6e82e6517e1a4eaa8ed17062bb86a, type: 3}
+  - {fileID: 21300000, guid: 0130101f5d2ca7c45baa33eb822da791, type: 3}
+  - {fileID: 21300000, guid: 79f2481ffe1b49947840db1c58cecdb1, type: 3}
+  - {fileID: 21300000, guid: 0ccf235fd52cfbf469180caee2dc0c9e, type: 3}
+  - {fileID: 21300000, guid: c8325a5f229dfab428a2d59f19df0b41, type: 3}
+  - {fileID: 21300000, guid: 07ab9d5f9c9c83046b7dc532a5e6baee, type: 3}
+  - {fileID: 21300000, guid: 237eefaf06d987d42a32487715db844d, type: 3}
+  - {fileID: 21300000, guid: dd3aa7df5827bb94c8ba4bffef544bc4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bomb_BOOM_1_0006
+  - bomb_walk_1_0007
+  - bomb_BOOM_1_0003
+  - bomb_BOOM_1_0011
+  - bomb_prepare_1_0001
+  - bomb_idle_2_0004
+  - bomb_spawn_1_0006
+  - bomb_walk_1_0004
+  - bomb_spawn_1_0001
+  - bomb_BOOM_1_0007
+  - bomb_spawn_1_0013
+  - bomb_BOOM_1_0004
+  - bomb_walk_1_0002
+  - bomb_BOOM_1_0002
+  - bomb_prepare_1_0004
+  - bomb_spawn_1_0002
+  - bomb_spawn_1_0012
+  - bomb_spawn_1_0009
+  - bomb_BOOM_1_0005
+  - bomb_walk_1_0001
+  - bomb_BOOM_1_0010
+  - bomb_walk_1_0006
+  - bomb_spawn_1_0004
+  - bomb_spawn_1_0014
+  - bomb_spawn_1_0003
+  - bomb_BOOM_1_0001
+  - bomb_BOOM_1_0009
+  - bomb_spawn_1_0007
+  - bomb_prepare_1_0003
+  - bomb_walk_1_0005
+  - bomb_spawn_1_0005
+  - bomb_spawn_1_0011
+  - bomb_idle_2_0003
+  - bomb_idle_2_0001
+  - bomb_spawn_1_0010
+  - bomb_walk_1_0008
+  - bomb_prepare_1_0002
+  - bomb_walk_1_0003
+  - bomb_BOOM_1_0008
+  - bomb_idle_2_0002
+  - bomb_spawn_1_0008
+  m_Tag: bimp_atlas
+  m_IsVariant: 0

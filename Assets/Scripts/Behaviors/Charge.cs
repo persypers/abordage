@@ -30,6 +30,6 @@ public class Charge : Action {
 
 	public override void OnEnd()
 	{
-		self.speed /= 1.5f;
+        self.speed /= speedBoost;
 	}
 }

@@ -22,7 +22,17 @@ public class Camerizer : MonoBehaviour {
 	public Vector3 Right{get {return transform.right;}}
 	public Vector3 Depth{get {return transform.forward;}}
 	public Vector3 Up{get {return transform.up;}}
-	public void OnDestroy()
+
+    public void Start()
+    {
+        var ors = GameObject.FindObjectsOfType<Oriented>();
+        foreach(var s in ors)
+        {
+            sprites.Add(s);
+        }
+    }
+
+    public void OnDestroy()
 	{
 		if(_instance == this) _instance = null;
 	}
@@ -36,7 +46,8 @@ public class Camerizer : MonoBehaviour {
 			sprite.transform.forward = Depth;
 		}
 	}
-/* 	public void FixedUpdate()
+
+    /* 	public void FixedUpdate()
 	{
 		Right = (right.position - transform.position).normalized;
 		Depth = (depth.position - transform.position).normalized;

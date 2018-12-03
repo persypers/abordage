@@ -43,6 +43,8 @@ public class Creature : MonoBehaviour {
 	HP hp;
 	public int hitRecoveries = 1;
 	public int deaths = 1;
+
+    public static Vector3 GroundingForce = new Vector3(0f, 25f, 0f);
 	private void Awake()
 	{
 		rigidbody = GetComponent<Rigidbody>();
@@ -62,6 +64,8 @@ public class Creature : MonoBehaviour {
 			animator.SetTrigger("death" + Random.Range(0, deaths));
 			controller.enabled = false;
 			enabled = false;
+            var beh = GetComponent<BehaviorDesigner.Runtime.Behavior>();
+            if (beh) beh.enabled = false;
 		});
 	}
 	private void Update()
@@ -80,7 +84,11 @@ public class Creature : MonoBehaviour {
 		}
 		animator.SetFloat("speed", move.sqrMagnitude);
 
-		if(!state.ignoresGravity) move.y -= gravity * Time.deltaTime;
+        if (!state.ignoresGravity)
+        {
+            move.y -= gravity * Time.deltaTime;
+            if(controller.isGrounded) move.y -= GroundingForce.y;
+        }
 
 		if(Jump && state.canJump)
 		{
@@ -114,7 +122,8 @@ public class Creature : MonoBehaviour {
 
 	private void Face(Vector3 dir)
 	{
-		float dot = Vector3.Dot(dir, Camerizer.Instance.Right);
+        if (!Camerizer.Instance) return;
+        float dot = Vector3.Dot(dir, Camerizer.Instance.Right);
 		if(dot != 0f && Mathf.Sign(dot) != horDir) Flip();
 	}
 	private void Flip()
@@ -125,7 +134,7 @@ public class Creature : MonoBehaviour {
 
 	public void Despawn()
 	{
-		if(GetComponent<InputScheme>())
+		if(GetComponent<Player>())
 		{
 			animator.SetTrigger("death0");
 		} else 
@@ -134,6 +143,7 @@ public class Creature : MonoBehaviour {
 
 	public void RestartGame()
 	{
-		SceneManager.LoadScene("robs-sandbox");
+        PlayMakerGlobals.Instance.Variables.FindFsmBool("ActiveCombat").Value = false;
+        SceneManager.LoadScene("Starter");
 	}
 }
