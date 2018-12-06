@@ -5,8 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class GameStarter : MonoBehaviour {
 
-	IEnumerator Start () {
+	/* IEnumerator Start () {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("robs-sandbox");
-    }	
+        StartGame();
+    }*/
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("newmap");
+    }
+
+    void Update()
+    {
+        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Return))
+        {
+            StartGame();
+        }
+    }
 }

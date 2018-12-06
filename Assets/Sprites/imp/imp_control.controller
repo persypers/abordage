@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state:
     canMove: 0
-    hitRecovery: 0
+    hitRecovery: 1
     canAttack: 0
     canJump: 0
     ignoresGravity: 0
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state:
     canMove: 0
-    hitRecovery: 0
+    hitRecovery: 1
     canAttack: 0
     canJump: 0
     ignoresGravity: 0

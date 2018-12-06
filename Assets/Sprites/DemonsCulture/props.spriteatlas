@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: props
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 49f5e3352ef72b740924058aa2a0be2e, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 030d78a2316773243845129d49606258, type: 3}
+  - {fileID: 21300000, guid: 26f40bf29cdb77d4f9eab90685374c8e, type: 3}
+  - {fileID: 21300000, guid: c73b176309ab46745b26a42943539e19, type: 3}
+  - {fileID: 21300000, guid: cd27c4e3410bf844a88a59930409c14e, type: 3}
+  - {fileID: 21300000, guid: 6fa11444df0d73247a1d9ecf2b22f2d0, type: 3}
+  - {fileID: 21300000, guid: e3d41dc4c221586438f2519d7ca72fef, type: 3}
+  - {fileID: 21300000, guid: 8322ca06c032e0b41bb896d160d4f240, type: 3}
+  - {fileID: 21300000, guid: fd4b4857a67a39e48819fc0f6ff8e5a4, type: 3}
+  - {fileID: 21300000, guid: efcb53788effca24c8571c6131dc297a, type: 3}
+  - {fileID: 21300000, guid: 4fb3eecc82d02b340905ce9d435aaf8b, type: 3}
+  - {fileID: 21300000, guid: 9b8a973d24984a747b4f898bb4ab7429, type: 3}
+  - {fileID: 21300000, guid: c22cdc8d915751641bfc98bf20ad8b1b, type: 3}
+  - {fileID: 21300000, guid: 120840cf546078b4995e40099c471696, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - adskie obj_1_svet1
+  - adskie obj_1_0008
+  - adskie obj_1_0004
+  - altar_sverhu
+  - adskie obj_1_0001
+  - pautina
+  - adskie obj_1_0006
+  - adskie obj_1_0005
+  - adskie obj_1_0002
+  - adskie obj_1_svet2
+  - adskie obj_1_0003
+  - adskie obj_1_0007
+  - adskie obj_1_svet3
+  m_Tag: props
+  m_IsVariant: 0

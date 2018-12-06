@@ -150,6 +150,11 @@ public class Creature : MonoBehaviour {
 	public void RestartGame()
 	{
         PlayMakerGlobals.Instance.Variables.FindFsmBool("ActiveCombat").Value = false;
-        SceneManager.LoadScene("Starter");
+//        PlayMakerGlobals.Instance.Variables.FindFsmBool("HasBrain").Value = true;
+//		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasHeart").Value = true;
+//		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasLiver").Value = true;
+//		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasEyes").Value = true;
+//		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasLungs").Value = true;
+		SceneManager.LoadScene("Starter");
 	}
 }

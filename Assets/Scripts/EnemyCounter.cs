@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyCounter : MonoBehaviour {
+//	public GameObject spawnPoint;
 	public static EnemyCounter Instance{get; private set;}
 	HashSet<Creature> creatures = new HashSet<Creature>();
 	
@@ -47,6 +48,11 @@ public class EnemyCounter : MonoBehaviour {
 
 	public void Win()
 	{
-
+		PlayMakerGlobals.Instance.Variables.FindFsmBool("WinRound").Value = true;
+		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasBrain").Value = true;
+		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasHeart").Value = true;
+		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasLiver").Value = true;
+		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasEyes").Value = true;
+		PlayMakerGlobals.Instance.Variables.FindFsmBool("HasLungs").Value = true;
 	}
 }

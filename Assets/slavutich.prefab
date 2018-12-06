@@ -1685,7 +1685,7 @@ MonoBehaviour:
   absentEffect: {fileID: 0}
   player: {fileID: 114350097379916896}
   _IsActive: 0
-  regenPerSec: 2
+  regenPerSec: 1.5
   hp: {fileID: 114401895097309960}
 --- !u!124 &124700969923355888
 Behaviour:

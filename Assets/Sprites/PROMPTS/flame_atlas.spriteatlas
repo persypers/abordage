@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: flame_atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f7844dfdee37fae41943f6cd344e95a9, type: 3}
+    - {fileID: 102900000, guid: 50e0a701a1ac63047a66926e9d958bef, type: 3}
+    - {fileID: 102900000, guid: ba006c809131c5e42a06cdb93a8604f5, type: 3}
+    - {fileID: 102900000, guid: 13ef8051de818b7408f24ed978095e54, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ce11ad80bf3f95f4780fa20f5190b8bb, type: 3}
+  - {fileID: 21300000, guid: 3a6a2861a8d409541902f9d82eaba111, type: 3}
+  - {fileID: 21300000, guid: 126960919a7dcdd4495cd7ac02750b12, type: 3}
+  - {fileID: 21300000, guid: c53d4713fdecb414eb88f5b40c44308f, type: 3}
+  - {fileID: 21300000, guid: 46680683e5c88fb468c9da0ea12463b6, type: 3}
+  - {fileID: 21300000, guid: bb76d5f3613064745a06e3bd5ed5157e, type: 3}
+  - {fileID: 21300000, guid: e1aebf84b7969864ab98c2a9795460de, type: 3}
+  - {fileID: 21300000, guid: 8b0494158f2ce49428ac62415f748a11, type: 3}
+  - {fileID: 21300000, guid: 72fee9b5c3bf9b148aea48a1218093c1, type: 3}
+  - {fileID: 21300000, guid: 73365df675779694cbaa64e976c3fb1c, type: 3}
+  - {fileID: 21300000, guid: b99c8d47213ce084e98dc80ef18af97c, type: 3}
+  - {fileID: 21300000, guid: c8ced6e88c95b2d4ca639c3bf80d7e22, type: 3}
+  - {fileID: 21300000, guid: 3fdaaae87013bb04bba783783cc9cf9c, type: 3}
+  - {fileID: 21300000, guid: 2f8d989945fbd7240922fdb19e1a8d45, type: 3}
+  - {fileID: 21300000, guid: 703eafbb6ea211846b011c1b6cb14a10, type: 3}
+  - {fileID: 21300000, guid: 2810931da06f44848891f2829fc66afb, type: 3}
+  - {fileID: 21300000, guid: 41ce9f8d55b9538498e06768303eaaee, type: 3}
+  - {fileID: 21300000, guid: f4551ebd568cd2a4190b8ccd90f2442e, type: 3}
+  - {fileID: 21300000, guid: 3e0b283e83e7dda4e9f67f5f5ce52a5e, type: 3}
+  - {fileID: 21300000, guid: 7836e33f299922d4f898cdf3dc85f071, type: 3}
+  - {fileID: 21300000, guid: b998594f3e0845a448a4ca5723897ec1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Fire_super1_00003
+  - light_circle0004
+  - light_circle0005
+  - light_circle0006
+  - Fire_super1_00001
+  - light_circle0003
+  - Fire_super1_00002
+  - Fire_super1_00010
+  - fire_cndl1_1_0003
+  - fire_cndl1_1_0001
+  - Fire_super1_00007
+  - Fire_super1_00009
+  - Fire_super1_00005
+  - fire_cndl1_1_0004
+  - Fire_super1_00008
+  - Fire_super1_00006
+  - light_circle0002
+  - fire_cndl1_1_0002
+  - light_circle0001
+  - Fire_super1_00004
+  - Fire_super1_00000
+  m_Tag: flame_atlas
+  m_IsVariant: 0

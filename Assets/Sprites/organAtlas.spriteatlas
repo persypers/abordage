@@ -47,6 +47,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e1777381e18d4de42aadb663c3fec654, type: 3}
   - {fileID: 21300000, guid: d0415c81a73077444ba148a9b73bf05c, type: 3}
   - {fileID: 21300000, guid: 3b395b12e88870b458989413b5f251b0, type: 3}
+  - {fileID: 21300000, guid: c7b39c12a8ddda944a203ff488f31080, type: 3}
   - {fileID: 21300000, guid: 2aff7662a8b0359408a8aee48399e5b3, type: 3}
   - {fileID: 21300000, guid: dca05b6271a3fac4bac3ee6370fddadf, type: 3}
   - {fileID: 21300000, guid: 9967f972315cfe2499ee32cd06ea9ba5, type: 3}
@@ -148,6 +149,7 @@ SpriteAtlas:
   - vaz_heart_beats1_0003
   - vaz_heart_beats1_0011
   - vaz_bloodSplash1_0001
+  - vaz_heart_beats1_0014
   - vaz_eyes1_0007
   - vaz_heart_falls1_0009
   - vaz_fires1_0009
